@@ -36,13 +36,6 @@ section {
 }
 
 .project h3 a:hover {
-  color: #6D6D6D;
+  color: #6d6d6d;
   text-decoration: underline;
-}
-
-
-footer {
-  text-align: left;
-  padding: 1rem;
-  font-size: 0.9rem;
 }
