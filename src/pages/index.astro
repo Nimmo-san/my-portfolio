@@ -1,11 +1,49 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import '../styles/global.css';
 ---
 
-<Layout>
-	<Welcome />
-</Layout>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Natu Okubet | Portfolio</title>
+  </head>
+  <body>
+    <header>
+      <h1>Natu Okubet</h1>
+      <p>Software Developer</p>
+      <nav>
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+          <h3>Clarity</h3>
+          <p>A quote/journal app for self-mastery, with custom themes and onboarding.</p>
+          <a href="https://github.com/Nimmo-san/clarity_app.git">View on GitHub</a>
+        </div>
+        <!-- Add more projects -->
+      </section>
+
+      <section id="about">
+        <h2>About Me</h2>
+        <p>Dont get me started...</p>
+      </section>
+
+      <section id="contact">
+        <h2>Contact</h2>
+		<a href="https://www.linkedin.com/in/natu-okubet/">LinkedIn</a>
+        <p>Email: natu.okubet@gmail.com</p>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Natu</p>
+    </footer>
+  </body>
+</html>
