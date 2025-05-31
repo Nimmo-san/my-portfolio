@@ -1,6 +1,7 @@
 ---
 import "../styles/global.css";
 import Footer from "../components/Footer.astro";
+import Contact from "../components/Contact.astro";
 ---
 
 <html lang="en">
@@ -102,10 +103,27 @@ import Footer from "../components/Footer.astro";
       </section>
 
       <section id="contact">
-        <h2>Contact</h2>
-        <a href="mailto:natu.okubet@gmail.com" aria-label="Email"
-          ><i class="fa-solid fa-envelope fa-2x"></i>
-        </a>
+        <div class="inner">
+          <section>
+            <Contact />
+          </section>
+		  <section class="split">
+			  <section>
+				<div class="contact-method">
+				  <span class="icon solid alt fa-envelope"></span>
+				  <h3>Email</h3>
+				  <a href="mailto:natu.okubet@gmail.com">natu.okubet@gmail.com</a>
+				</div>
+			  </section>
+			  <section>
+				<div class="contact-method">
+				  <span class="icon solid alt fa-phone"></span>
+				  <h3>Phone</h3>
+				  <span>07546976044</span>
+				</div>
+			  </section>
+		  </section>
+        </div>
       </section>
     </main>
 
