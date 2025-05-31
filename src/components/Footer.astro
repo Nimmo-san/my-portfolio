@@ -45,6 +45,22 @@
   </div>
 
   <style>
+    @import "../styles/theme.css";
+    /* Footer Container */
+    #footer {
+      background-color: var(--color-bg);
+      color: var(--color-text);
+      text-align: center;
+      padding: var(--spacing-md) var(--spacing-sm);
+      font-family: var(--font-body);
+    }
+
+    #footer .inner {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    /* Icons List */
     ul.icons {
       cursor: default;
       list-style: none;
@@ -55,7 +71,7 @@
 
     ul.icons li {
       display: inline-block;
-      padding: 0 1rem 0 0; /* Padding: Top, Right, Bottom, Left */
+      padding: 0 var(--spacing-sm) 0 0;
     }
 
     ul.icons li:last-child {
@@ -63,22 +79,25 @@
     }
 
     ul.icons li a {
-      color: #3a3a3a;
-      font-size: 1.8rem; /* Larger icon size */
-      transition: color 0.3s ease;
+      color: var(--color-accent);
+      font-size: 1.8rem;
+      transition:
+        color 0.3s ease,
+        transform 0.3s ease;
     }
 
     ul.icons li a:hover {
-      color: #6d6d6d; /* Softer hover color */
+      color: var(--color-accent-hover);
+      transform: scale(1.1);
     }
 
     @media screen and (max-width: 736px) {
       ul.icons li {
-        padding: 0 0.75rem 0 0;
+        padding: 0 calc(var(--spacing-sm) * 0.75) 0 0;
       }
 
       ul.icons li a {
-        font-size: 1.5rem; /* Slightly smaller icons on mobile */
+        font-size: 1.5rem;
       }
     }
 
@@ -95,64 +114,28 @@
     }
 
     .icon.alt:before {
-      background-color: #f7f7f4; /* Soft off-white background */
+      background-color: var(--color-surface);
       border-radius: 100%;
-      color: #3a3a3a; /* Primary text color */
+      color: var(--color-accent);
       display: inline-block;
-      height: 2.2em; /* Slightly larger circle */
+      height: 2.2em;
       line-height: 2.2em;
       text-align: center;
       width: 2.2em;
       transition:
         background-color 0.3s ease,
-        color 0.3s ease;
+        color 0.3s ease,
+        transform 0.3s ease;
     }
 
     a.icon.alt:hover:before {
-      background-color: #d9d8d3; /* Muted gray on hover */
-      color: #6d6d6d; /* Slightly lighter text on hover */
+      background-color: var(--color-accent-active);
+      color: var(--color-accent-hover);
+      transform: scale(1.1);
     }
 
     a.icon.alt:active:before {
-      background-color: #c0bfb8; /* Darker hover active */
-    }
-
-    /* Footer Container */
-    #footer {
-      background-color: #f7f7f4;
-      color: #3a3a3a;
-      text-align: center;
-      padding: 2rem 1rem;
-      font-family: system-ui, sans-serif;
-    }
-
-    #footer .inner {
-      max-width: 800px;
-      margin: 0 auto;
-    }
-
-    /* Icons List */
-    #footer .icons {
-      list-style: none;
-      padding: 0;
-      margin: 0 0 1rem 0;
-      display: flex;
-      justify-content: center;
-      gap: 1.5rem;
-    }
-
-    #footer .icons li a {
-      color: #3a3a3a;
-      font-size: 1.8rem;
-      transition: color 0.3s ease;
-    }
-
-    #footer .icons li a:hover {
-      color: #6d6d6d; /* Hover color */
-    }
-
-    #footer .icons li a .label {
-      display: none; /* Hide text, keep accessible */
+      background-color: var(--color-accent-active);
     }
 
     /* Copyright */
@@ -161,10 +144,10 @@
       padding: 0;
       margin: 0;
       font-size: 0.9rem;
-      color: #6d6d6d;
+      color: var(--color-muted);
     }
 
-    /* Responsive Adjustments */
+    /* Mobile */
     @media (max-width: 480px) {
       #footer .icons {
         gap: 1rem;
