@@ -1,5 +1,6 @@
 ---
 import "../styles/global.css";
+import Footer from "../components/Footer.astro";
 ---
 
 <html lang="en">
@@ -102,38 +103,13 @@ import "../styles/global.css";
 
       <section id="contact">
         <h2>Contact</h2>
-        <footer>
-          <a
-            href="https://github.com/Nimmo-san"
-            target="_blank"
-            rel="noopener"
-            aria-label="GitHub"
-          >
-            <i class="fab fa-github fa-2x"></i>
-          </a>
-          <a
-            href="https://www.linkedin.com/in/natu-okubet/"
-            target="_blank"
-            rel="noopener"
-            aria-label="LinkedIn"
-          >
-            <i class="fab fa-linkedin fa-2x"></i>
-          </a>
-          <a
-            href="mailto:natu.okubet@gmail.com"
-            target="_blank"
-            ,
-            rel="noopener"
-            aria-label="Email"
-          >
-            <i class="fas fa-envelope fa-2x"></i>
-          </a>
-        </footer>
+        <a href="mailto:natu.okubet@gmail.com" aria-label="Email"
+          ><i class="fa-solid fa-envelope fa-2x"></i>
+        </a>
       </section>
     </main>
 
-    <footer>
-      <p>&copy; 2025 Natu</p>
-    </footer>
+    <!-- footer -->
+    <Footer />
   </body>
 </html>

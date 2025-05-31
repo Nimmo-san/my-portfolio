@@ -1,0 +1,161 @@
+---
+
+---
+
+<footer id="footer">
+  <div class="inner">
+    <ul class="icons">
+      <li>
+        <a
+          href="https://github.com/Nimmo-san"
+          class="icon brands alt fa-github"
+          target="_blank"
+          rel="noopener"
+          aria-label="GitHub"
+        >
+          <span class="label">GitHub</span>
+        </a>
+      </li>
+      <li>
+        <a
+          href="https://www.linkedin.com/in/natu-okubet/"
+          class="icon brands alt fa-linkedin-in"
+          target="_blank"
+          rel="noopener"
+          aria-label="LinkedIn"
+        >
+          <span class="label">LinkedIn</span>
+        </a>
+      </li>
+      <li>
+        <a
+          href="https://www.instagram.com/nemooku/"
+          class="icon brands alt fa-instagram"
+          target="_blank"
+          rel="noopener"
+          aria-label="Instagram"
+        >
+          <span class="label">Instagram</span>
+        </a>
+      </li>
+    </ul>
+    <ul class="copyright">
+      <li>&copy; 2025 Nimmo</li>
+    </ul>
+  </div>
+
+  <style>
+    @import "../styles/theme.css";
+    /* Footer Container */
+    #footer {
+      background-color: var(--color-bg);
+      color: var(--color-text);
+      text-align: center;
+      padding: var(--spacing-md) var(--spacing-sm);
+      font-family: var(--font-body);
+    }
+
+    #footer .inner {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    /* Icons List */
+    ul.icons {
+      cursor: default;
+      list-style: none;
+      padding-left: 0;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    ul.icons li {
+      display: inline-block;
+      padding: 0 var(--spacing-sm) 0 0;
+    }
+
+    ul.icons li:last-child {
+      padding-right: 0;
+    }
+
+    ul.icons li a {
+      color: var(--color-accent);
+      font-size: 1.8rem;
+      transition:
+        color 0.3s ease,
+        transform 0.3s ease;
+    }
+
+    ul.icons li a:hover {
+      color: var(--color-accent-hover);
+      transform: scale(1.1);
+    }
+
+    @media screen and (max-width: 736px) {
+      ul.icons li {
+        padding: 0 calc(var(--spacing-sm) * 0.75) 0 0;
+      }
+
+      ul.icons li a {
+        font-size: 1.5rem;
+      }
+    }
+
+    .icon > .label {
+      display: none;
+    }
+
+    .icon:before {
+      line-height: inherit;
+    }
+
+    .icon.brands:before {
+      font-family: "Font Awesome 5 Brands";
+    }
+
+    .icon.alt:before {
+      background-color: var(--color-surface);
+      border-radius: 100%;
+      color: var(--color-accent);
+      display: inline-block;
+      height: 2.2em;
+      line-height: 2.2em;
+      text-align: center;
+      width: 2.2em;
+      transition:
+        background-color 0.3s ease,
+        color 0.3s ease,
+        transform 0.3s ease;
+    }
+
+    a.icon.alt:hover:before {
+      background-color: var(--color-accent-active);
+      color: var(--color-accent-hover);
+      transform: scale(1.1);
+    }
+
+    a.icon.alt:active:before {
+      background-color: var(--color-accent-active);
+    }
+
+    /* Copyright */
+    #footer .copyright {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      font-size: 0.9rem;
+      color: var(--color-muted);
+    }
+
+    /* Mobile */
+    @media (max-width: 480px) {
+      #footer .icons {
+        gap: 1rem;
+      }
+
+      #footer .icons li a {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+</footer>
