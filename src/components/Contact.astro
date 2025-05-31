@@ -1,0 +1,81 @@
+---
+
+---
+
+<section
+  class="relative bg-gradient-to-br from-dark-bg to-dark-surface text-dark-text py-16 px-4 sm:px-8 md:px-16 rounded-lg shadow-lg max-w-2xl mx-auto mt-12"
+>
+  <h2
+    class="text-4xl font-heading text-center text-dark-accent mb-4 animate-fade-in"
+  >
+    Let's Talk
+  </h2>
+  <p class="text-center text-dark-muted mb-8 max-w-md mx-auto animate-fade-in">
+    Ready to elevate your business with a stunning website? Get in touch and
+    let's make it happen.
+  </p>
+
+  <form
+    class="space-y-4 animate-fade-in"
+    name="contact"
+    method="POST"
+    data-netlify="true"
+  >
+    <input type="hidden" name="form-name" value="contact" />
+    <div>
+      <label class="block text-sm font-bold mb-1" for="name">Name</label>
+      <input
+        type="text"
+        id="name"
+        name="name"
+        placeholder="Your Name"
+        class="w-full px-4 py-2 rounded-md bg-dark-surface text-dark-text border border-dark-muted focus:outline-none focus:ring-2 focus:ring-dark-accent focus:border-transparent transition"
+        required
+      />
+    </div>
+
+    <div>
+      <label class="block text-sm font-bold mb-1" for="email">Email</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="you@example.com"
+        class="w-full px-4 py-2 rounded-md bg-dark-surface text-dark-text border border-dark-muted focus:outline-none focus:ring-2 focus:ring-dark-accent focus:border-transparent transition"
+        required
+      />
+    </div>
+
+    <div>
+      <label class="block text-sm font-bold mb-1" for="message">Message</label>
+      <textarea
+        id="message"
+        name="message"
+        rows="4"
+        placeholder="Tell me about your project..."
+        class="w-full px-4 py-2 rounded-md bg-dark-surface text-dark-text border border-dark-muted focus:outline-none focus:ring-2 focus:ring-dark-accent focus:border-transparent transition"
+        required></textarea>
+    </div>
+
+    <button
+      type="submit"
+      class="w-full py-3 px-6 bg-dark-accent text-dark-bg font-bold rounded-md hover:bg-dark-hover transition shadow-md hover:shadow-lg transform hover:-translate-y-1"
+    >
+      Send Message
+    </button>
+  </form>
+</section>
+
+<style>
+    @import 'tailwindcss';
+  .animate-fade-in {
+    animation: fadeIn 1s ease forwards;
+    opacity: 0;
+  }
+
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+  }
+</style>
