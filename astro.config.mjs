@@ -8,7 +8,7 @@ export default defineConfig({
     site: 'https://nimmo-san.github.io',
     base: '', // 
     integrations: [react()],
-    vite: {
-        plugins: [tailwindcss()],
-    },
+    // vite: {
+    //     plugins: [tailwindcss()],
+    // },
 });
