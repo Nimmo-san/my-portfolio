@@ -40,7 +40,7 @@
       </li>
     </ul>
     <ul class="copyright">
-      <li>&copy; 2025 Nimmo</li>
+      <li>&copy; Designed & Developed by Natu Okubet 2025</li>
     </ul>
   </div>
 
@@ -62,20 +62,15 @@
 
     /* Icons List */
     ul.icons {
-      cursor: default;
       list-style: none;
-      padding-left: 0;
+      padding: 0;
       margin: 0 auto;
-      text-align: center;
+      text-align: left;
     }
 
     ul.icons li {
       display: inline-block;
       padding: 0 var(--spacing-sm) 0 0;
-    }
-
-    ul.icons li:last-child {
-      padding-right: 0;
     }
 
     ul.icons li a {
@@ -87,10 +82,11 @@
     }
 
     ul.icons li a:hover {
-      color: var(--color-accent-hover);
+      color: var(--color-accent);
       transform: scale(1.1);
     }
 
+    /* Responsiveness */
     @media screen and (max-width: 736px) {
       ul.icons li {
         padding: 0 calc(var(--spacing-sm) * 0.75) 0 0;
@@ -101,6 +97,7 @@
       }
     }
 
+    /* Hides Text Label */
     .icon > .label {
       display: none;
     }
@@ -145,9 +142,10 @@
       margin: 2rem 0 0 0;
       font-size: 0.9rem;
       color: var(--color-muted);
+      text-align: left;
     }
 
-    /* Mobile */
+    /* Mobile Responsiveness */
     @media (max-width: 480px) {
       #footer .icons {
         gap: 1rem;
